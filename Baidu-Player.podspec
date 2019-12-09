@@ -18,10 +18,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '7.0'
   s.requires_arc = true
 
-  s.prepare_command = <<-CMD
-    rm vendor/libssl.a
-    rm vendor/libcrypto.a
-  CMD
+  s.prepare_command = 'rm -rf vendor/libssl.a vendor/libcrypto.a'
 
   s.vendored_libraries = 'vendor/libffmpeg.a'
   s.vendored_frameworks = 'frameworks/BDCloudMediaUtils.framework', 'frameworks/BDCloudMediaPlayer.framework', 'frameworks/BDCloudMediaDownloader.framework', 'frameworks/BDCloudMediaSource.framework', 'frameworks/BDCloudMediaSprite.framework'
