@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.prepare_command = 'rm -rf vendor/libssl.a vendor/libcrypto.a'
 
   s.vendored_libraries = 'vendor/libffmpeg.a'
-  s.vendored_frameworks = 'frameworks/BDCloudMediaUtils.framework', 'frameworks/BDCloudMediaPlayer.framework', 'frameworks/BDCloudMediaDownloader.framework', 'frameworks/BDCloudMediaSource.framework', 'frameworks/BDCloudMediaSprite.framework'
+  s.vendored_frameworks = 'frameworks/BDCloudMediaUtils.framework', 'frameworks/BDCloudMediaPlayer.framework', 'frameworks/BDCloudMediaDownloader.framework', 'frameworks/BDCloudMediaSource.framework', 'frameworks/BDCloudMediaSprite.framework', 'frameworks/BDCloudMediaAdaptive.framework'
   s.frameworks = 'Foundation', 'UIKit', 'AudioToolbox', 'MobileCoreServices', 'GLKit'
   s.dependency 'openssl-ios-bitcode', '~> 1.0.210'
   s.libraries = 'bz2', 'z', 'c++'
