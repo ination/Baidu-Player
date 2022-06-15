@@ -11,11 +11,11 @@ Pod::Spec.new do |s|
          LICENSE
   }
   s.description  = <<-DESC
-    Baidu Cloud iOS Player SDK supoort iOS 8.0 and later,
+    Baidu Cloud iOS Player SDK supoort iOS 9.0 and later,
   DESC
   s.author   =   { 'Baidu Cloud Multimedia Team' => 'bce-multimedia@baidu.com' }
   s.source   =   { :http => 'https://sdk.bce.baidu.com/media-sdk/Baidu-Cloud-Player-iOS-Full-v2.3.6.zip'}
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   s.requires_arc = true
 
   s.prepare_command = 'rm -rf vendor/libssl.a vendor/libcrypto.a'
