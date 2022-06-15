@@ -16,6 +16,7 @@ Pod::Spec.new do |s|
   s.author   =   { 'Baidu Cloud Multimedia Team' => 'bce-multimedia@baidu.com' }
   s.source   =   { :http => 'https://sdk.bce.baidu.com/media-sdk/Baidu-Cloud-Player-iOS-Full-v2.3.6.zip'}
   s.ios.deployment_target = '9.0'
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
   s.requires_arc = true
 
   s.prepare_command = 'rm -rf vendor/libssl.a vendor/libcrypto.a'
