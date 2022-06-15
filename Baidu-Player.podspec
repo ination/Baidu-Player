@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  s.name         = 'Baidu-Player-Full'
+  s.name         = 'Baidu-Player'
   s.version      = '2.3.6'
   s.summary      = 'Baidu Cloud iOS Player Full SDK'
   s.homepage     = 'https://cloud.baidu.com/doc/MCT/s/qjwvz50w7/'
