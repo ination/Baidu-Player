@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     Baidu Cloud iOS Player SDK supoort iOS 9.0 and later,
   DESC
   s.author   =   { 'Baidu Cloud Multimedia Team' => 'bce-multimedia@baidu.com' }
-  s.source   =   { :http => 'https://sdk.bce.baidu.com/media-sdk/Baidu-Cloud-Player-iOS-FULL-3.0.0.zip'}
+  s.source   =   { :http => 'http://sdk.bce.baidu.com/media-sdk/Baidu-Cloud-Player-iOS-FULL-3.0.0.zip'}
   s.ios.deployment_target = '9.0'
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
   s.requires_arc = true
@@ -22,8 +22,15 @@ Pod::Spec.new do |s|
   s.prepare_command = 'rm -rf vendor/libssl.a vendor/libcrypto.a'
 
   s.vendored_libraries = 'vendor/libffmpeg.a'
-  s.vendored_frameworks = 'frameworks/BDCloudMediaUtils.framework', 'frameworks/BDCloudMediaPlayer.framework', 'frameworks/BDCloudMediaDownloader.framework', 'frameworks/BDCloudMediaSource.framework', 'frameworks/BDCloudMediaSprite.framework', 'frameworks/BDCloudMediaAdaptive.framework', 'frameworks/BaiduAPMAgent.framework'
-  s.frameworks = 'Foundation', 'UIKit', 'AudioToolbox', 'GLKit'
+  s.vendored_frameworks = 
+	'frameworks/BDCloudMediaUtils.framework', 
+	'frameworks/BDCloudMediaPlayer.framework', 
+	'frameworks/BDCloudMediaDownloader.framework', 
+	'frameworks/BDCloudMediaSource.framework', 
+	'frameworks/BDCloudMediaSprite.framework', 
+	'frameworks/BDCloudMediaAdaptive.framework', 
+	'frameworks/BaiduAPMAgent.framework'
+  s.frameworks = 'Foundation', 'UIKit', 'AudioToolbox'
   s.dependency 'openssl-ios-bitcode', '~> 1.0.210'
   s.libraries = 'bz2', 'z', 'c++'
 end
